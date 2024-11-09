@@ -21,7 +21,7 @@ body{
   } 
 
   section{
-    height: 90vh;
+    height: auto;
   }
 
   html{
