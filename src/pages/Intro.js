@@ -1,14 +1,21 @@
 import React from 'react'
-import { ReactTyped } from 'react-typed'
+import profile from '../assets/profile-no-bg.png'
 export default function Intro() {
   return (
-    <section id="about" aria-label='about' className='flex flex-row justify-center items-center'>
-        <div className='w-2/3 text-left text-white'>
-            <h1 className='text-5xl text-white font-bold'>
-              <ReactTyped strings={["Hi!<br />I am Sai Pranav Nishtala"]} typeSpeed={100}/>
-            </h1>
-            {/* <img src={process.env.PUBLIC_URL+'/hand.png'} className='h-96' alt="Hand" /> */}
-        </div>
+    <section id="about" aria-label='about' className='h-screen flex flex-row justify-start items-center'>
+      <div className=' text-left text-white p-5 md:p-20 '>
+        <h1 className='text-7xl text-white font-bold'>
+        I'm Sai Pranav Nishtala, a Front-End Developer.
+        </h1>
+        <h1 className='text-7xl text-gray-500 font-bold'>Based in Canada.</h1>
+        <p className='text-lg text-white mt-3 p-1'>
+        I'm a passionate front-end developer who brings both creativity and precision to every project. If you’re looking for a developer who truly cares about the details, I’d love to collaborate.
+        </p>
+      </div>
+      {/* <div className='w-1/3'>
+      <img src={profile} className='h-96' alt="Hand" />
+
+      </div> */}
     </section>
   )
 }
