@@ -1,5 +1,4 @@
 import React from 'react'
-import profile from '../assets/profile-no-bg.png'
 export default function Intro() {
   return (
     <section id="about" aria-label='about' className='h-screen flex flex-row justify-start items-center'>
