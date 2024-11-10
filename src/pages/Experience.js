@@ -30,14 +30,14 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id='experience' className='p-5 md:p-20 text-left text-white'>
+    <section id='experience' className='z-10 p-5 md:p-20 text-left text-white'>
       <h1 className='text-3xl font-extrabold mb-6'>Experience</h1>
 
       <ol className="relative border-l border-gray-500">
         {experiences.map((experience, index) => (
           <li key={index} className="mb-10 ml-6">
             <div className="absolute w-3 h-3 bg-gray-400 rounded-full mt-1.5 -left-1.5 border border-gray-500"></div>
-            <time className="mb-1 text-sm font-medium text-gray-500">{experience.date}</time>
+            <time className="mb-1 text-sm font-medium text-gray-100 sm:text-gray-500">{experience.date}</time>
             <h3 className="text-lg font-semibold text-white">{experience.title}</h3>
             <p className="text-base font-normal text-gray-400">
               {experience.description}

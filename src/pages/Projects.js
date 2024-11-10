@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const ProjectModal = ({ project, onClose }) => {
   return (
-    <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+    <div className="sm:p-0 p-10 fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
       <div className="bg-gray-800 hover:shadow-lg transition-all p-8 rounded-lg shadow-lg max-w-4xl w-full">
         <button
           onClick={onClose}
