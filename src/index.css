@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+html{
     height:100vh;
     margin: 0;
     --x: calc(var(--posX, 0) * 1px);
@@ -21,7 +21,7 @@ body{
   } 
   @media (max-width: 767px) {
     /* Gradient background for mobile devices */
-    body {
+    html {
       height: 100vh;
       margin: 0;
       background-image: 
@@ -30,9 +30,9 @@ body{
         radial-gradient(circle at 80% 70%, rgba(0, 255, 255, 0.2), transparent 70%), /* Soft teal glow */
         radial-gradient(circle at 50% 50%, rgba(0, 0, 255, 0.15), transparent 80%); /* Light blue center */
       background-blend-mode: overlay, screen, color-dodge, normal;
-      background-repeat: no-repeat;
+      background-repeat:no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      background-attachment:fixed;
     }
     
   
