@@ -101,7 +101,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white/30 p-6 rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer hover:scale-105"
+            className="bg-white/30 p-6 rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer hover:scale-100 sm:hover:scale-105"
             onClick={() => handleCardClick(project)}
           >
             <h3 className="text-xl font-semibold mb-2 text-white">{project.name}</h3>
