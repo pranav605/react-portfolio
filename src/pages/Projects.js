@@ -17,6 +17,16 @@ const ProjectModal = ({ project, onClose }) => {
             <img key={index} src={tech.logo} alt={tech.name} className="h-10 w-auto" />
           ))}
         </div>
+        {project.url && 
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="float-end bottom-4 right-4 mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Go to website
+          </a>
+        }
       </div>
     </div>
   );
@@ -26,6 +36,15 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
+    {
+      name: 'Journal',
+      description: 'Developed an online journaling website using NextJS',
+      technologies: [
+        { name: 'Typescript', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg' },
+        { name: 'NextJS', logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg' },
+      ],
+      url:'https://journal-eight-theta.vercel.app/'
+    },
     {
       name: 'Data Generation Tool',
       description: 'Developed an internal tool to enhance data quality and volume for ML training, achieving 92% accuracy in weapon detection from CCTV feeds.',
@@ -61,7 +80,7 @@ export default function Projects() {
       ]
     },
     {
-      name: 'Santa’s AI Sleigh Ride',
+      name: "Santa's AI Sleigh Ride",
       description: 'Built a Python app to demonstrate AI algorithms and analyze early machine learning methods, with a focus on efficiency.',
       technologies: [
         { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' },
