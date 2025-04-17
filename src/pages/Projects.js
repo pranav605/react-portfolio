@@ -114,7 +114,7 @@ export default function Projects() {
   };
 
   return (
-    <section id='projects' className='p-5 md:p-20 text-left text-white'>
+    <section id='projects' aria-label='projects' className='p-5 md:p-20 text-left text-white'>
       <h1 className='text-3xl font-extrabold mb-6'>Projects</h1>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (

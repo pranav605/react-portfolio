@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <section id="contact" className="p-10 md:p-20 text-left dark:text-white" style={{ backgroundColor: 'transparent' }}>
+    <section id="contact" aria-label='contact' className="p-10 md:p-20 text-left dark:text-white" style={{ backgroundColor: 'transparent' }}>
       {/* <h1 className="text-3xl font-extrabold mb-6 text-gray-800 dark:text-white">Contact Me</h1> */}
       
       <div className="max-w-3xl mx-auto text-center">

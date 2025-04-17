@@ -30,7 +30,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id='experience' className='z-10 p-5 md:p-20 text-left text-white'>
+    <section id='experience' aria-label='experience' className='z-10 p-5 md:p-20 text-left text-white'>
       <h1 className='text-3xl font-extrabold mb-6'>Experience</h1>
 
       <ol className="relative border-l border-gray-500">
