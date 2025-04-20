@@ -8,7 +8,7 @@ export default function Intro() {
         </h1>
         <h1 className='text-7xl text-gray-500 font-bold'>Based in Canada.</h1>
         <p className='text-lg text-white mt-3 p-1'>
-        I'm a passionate front-end developer who brings both creativity and precision to every project. If you’re looking for a developer who truly cares about the details, I’d love to collaborate.
+        I'm a passionate software developer who brings both creativity and precision to every project. If you’re looking for a developer who truly cares about the details, I’d love to collaborate.
         </p>
       </div>
       {/* <div className='w-1/3'>
