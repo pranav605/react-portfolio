@@ -4,7 +4,7 @@ export default function Intro() {
     <section id="about" aria-label='about' className='h-screen flex flex-row justify-start items-center'>
       <div className=' text-left text-white p-5 md:p-20 '>
         <h1 className='text-7xl text-white font-bold'>
-        I'm Sai Pranav Nishtala, a Front-End Developer.
+        I'm Sai Pranav Nishtala, a Software Developer.
         </h1>
         <h1 className='text-7xl text-gray-500 font-bold'>Based in Canada.</h1>
         <p className='text-lg text-white mt-3 p-1'>
