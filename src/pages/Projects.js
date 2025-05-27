@@ -14,7 +14,7 @@ const ProjectModal = ({ project, onClose }) => {
         <p className="text-white mb-6">{project.description}</p>
         <div className="flex gap-4">
           {project.technologies.map((tech, index) => (
-            <img key={index} src={tech.logo} alt={tech.name} className="h-10 w-auto" />
+            <div className='flex flex-row items-center gap-2 border border-zinc-300 p-2 rounded-md'><img key={index} src={tech.logo} alt={tech.name} className="h-10 w-auto" /><span>{tech.name}</span></div>
           ))}
         </div>
         {project.url && 
@@ -41,7 +41,7 @@ export default function Projects() {
       description: 'Developed an online journaling website using NextJS',
       technologies: [
         { name: 'Typescript', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg' },
-        { name: 'NextJS', logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg' },
+        { name: 'NextJS', logo: 'https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000' },
       ],
       url:'https://journal-eight-theta.vercel.app/'
     },
@@ -66,7 +66,7 @@ export default function Projects() {
       name: 'GreenCart',
       description: 'Developed a responsive e-commerce platform for plant purchases using Django and Tailwind CSS, with scalable architecture.',
       technologies: [
-        { name: 'Django', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg' },
+        { name: 'Django', logo: 'https://img.icons8.com/?size=100&id=qULYrKvr-AFH&format=png&color=FFFFFF' },
         { name: 'Tailwind CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg' },
       ]
     },
@@ -75,7 +75,7 @@ export default function Projects() {
       description: 'Led a team to create an AI-driven customer support bot using the OpenAI API, following SCRUM methodology for efficiency.',
       technologies: [
         { name: 'OpenAI', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg' },
-        { name: 'Django', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg' },
+        { name: 'Django', logo: 'https://img.icons8.com/?size=100&id=qULYrKvr-AFH&format=png&color=FFFFFF' },
         { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' },
       ]
     },
@@ -92,7 +92,7 @@ export default function Projects() {
       technologies: [
         { name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
         { name: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' },
-        { name: 'Hadoop', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Hadoop_logo.svg' },
+        { name: 'Hadoop', logo: 'https://img.icons8.com/?size=100&id=69132&format=png&color=000000' },
       ]
     },
     {

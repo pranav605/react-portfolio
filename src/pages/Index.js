@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Intro from './Intro';
 import Experience from './Experience';
+import Education from './Education';
 import Projects from './Projects';
 import Contact from './Contact';
 import Showcase from './Showcase';
@@ -25,7 +26,7 @@ export default function Index() {
     setMenuOpen(!menuOpen);
   };
 
-  const sectionIds = ['about', 'experience', 'projects', 'contact'];
+  const sectionIds = ['about', 'experience','education', 'projects', 'contact'];
 
   useEffect(() => {
     const options = {
@@ -79,6 +80,10 @@ export default function Index() {
             "bg-gray-900 text-white": currSection === 'experience',
             "text-gray-300": currSection !== 'experience'
           })}>Experience</a>
+          <a href="#education" className={clsx("rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700", {
+            "bg-gray-900 text-white": currSection === 'education',
+            "text-gray-300": currSection !== 'education'
+          })}>Education</a>
           <a href="#projects" className={clsx("rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700", {
             "bg-gray-900 text-white": currSection === 'projects',
             "text-gray-300": currSection !== 'projects'
@@ -103,6 +108,7 @@ export default function Index() {
           <div className="absolute top-16 right-0 w-1/2 rounded-lg z-50 bg-gray-900 md:hidden">
             <a href="#about" onClick={toggleMenu} className="block px-4 py-2 text-white">About</a>
             <a href="#experience" onClick={toggleMenu} className="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Experience</a>
+            <a href="#education" onClick={toggleMenu} className="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Education</a>
             <a href="#projects" onClick={toggleMenu} className="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
             <a href="#contact" onClick={toggleMenu} className="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
           </div>
@@ -113,6 +119,7 @@ export default function Index() {
       <div className='pt-16'>
         <section id="about"><Intro /></section>
         <section id="experience"><Experience /></section>
+        <section id="education"><Education/></section>
         <section id="projects"><Projects /></section>
         <section id="showcase"><Showcase /></section>
         <section id="contact"><Contact /></section>
