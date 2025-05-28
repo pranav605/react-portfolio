@@ -12,9 +12,9 @@ const ProjectModal = ({ project, onClose }) => {
         </button>
         <h2 className="text-2xl font-bold mb-4">{project.name}</h2>
         <p className="text-white mb-6">{project.description}</p>
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           {project.technologies.map((tech, index) => (
-            <div className='flex flex-row items-center gap-2 border border-zinc-300 p-2 rounded-md'><img key={index} src={tech.logo} alt={tech.name} className="h-10 w-auto" /><span>{tech.name}</span></div>
+            <div key={index} className='flex flex-row items-center gap-2 sm:border sm:border-zinc-300 p-2 rounded-md'><img key={index} src={tech.logo} alt={tech.name} className="h-10 w-10" /><span>{tech.name}</span></div>
           ))}
         </div>
         {project.url && 
